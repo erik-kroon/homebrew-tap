@@ -8,6 +8,9 @@ class Zport < Formula
     if Hardware::CPU.arm?
       url "https://github.com/erik-kroon/zport/releases/download/v0.1.0/zport-v0.1.0-macos-arm64.tar.gz"
       sha256 "ae9ddfbeb44410429e8112e812333a1a37aaaafc8ef92fa9c6b97e9d8e4dda7b"
+    elsif Hardware::CPU.intel?
+      url "https://github.com/erik-kroon/zport/releases/download/v0.1.0/zport-v0.1.0-macos-x86_64.tar.gz"
+      sha256 "f07f86c7926956f947aa73adb7fee66dea714b7730926d7f38f9eab1cf1dbb48"
     end
   end
 
